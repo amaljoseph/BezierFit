@@ -26,7 +26,7 @@ plt.scatter(x=[c[0] for  c  in  bezier_points], y=[c[1] for  c  in  bezier_point
 plt.scatter(x=[c[0] for  c  in  curve.control_points], y=[c[1] for  c  in  curve.control_points], c="green", label="bezier control points", s=10)
 plt.legend()
 ```  
-![im1](docs/im1.jpg)
+![im1](docs/im1.png)
 
 2. Fit a curve to generate Bezier Ground Truth
 ```
@@ -50,4 +50,4 @@ plt.scatter(x=[c[0] for  c  in  bezier_points], y=[c[1] for  c  in  bezier_point
 plt.scatter(x=[c[0] for  c  in  curve.control_points], y=[c[1] for  c  in  curve.control_points], c="green", label="bezier control points", s=10)
 plt.legend()
 ```
-![im2](docs/im2.jpg)
+![im2](docs/im2.png)
