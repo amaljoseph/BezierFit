@@ -4,7 +4,7 @@
 
 * Define a Bezier Curve using it's control points and degree.
 
-* Fit a curve to Bezier using Least Squares Fitting.
+* Fit a curve to Bezier using Least Squares Method.
 
 ## Usage
 
