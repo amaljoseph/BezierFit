@@ -24,6 +24,7 @@ import  matplotlib.pyplot  as  plt
 
 plt.scatter(x=[c[0] for  c  in  bezier_points], y=[c[1] for  c  in  bezier_points], c="blue", label="bezier curve", s=0.2)
 plt.scatter(x=[c[0] for  c  in  curve.control_points], y=[c[1] for  c  in  curve.control_points], c="green", label="bezier control points", s=10)
+plt.text(s=f"degree = {degree}", x=10, y=42, c="red")
 plt.legend()
 ```  
 ![im1](docs/im1.png)
@@ -43,11 +44,13 @@ bezier_points  =  curve.get_curve(num=100)
 control_points  =  curve.control_points
 ```
 ```python
-import  matplotlib.pyplot  as  plt
+import matplotlib.pyplot as plt
 
-plt.scatter(x=[c[0] for  c  in  line_points], y=[c[1] for  c  in  line_points], c="red", label="original curve", marker='x')
-plt.scatter(x=[c[0] for  c  in  bezier_points], y=[c[1] for  c  in  bezier_points], c="blue", label="bezier curve", s=0.2)
-plt.scatter(x=[c[0] for  c  in  curve.control_points], y=[c[1] for  c  in  curve.control_points], c="green", label="bezier control points", s=10)
+plt.figure(figsize=(10, 6))
+plt.scatter(x=[c[0] for c in line_points], y=[c[1] for c in line_points], c="red", label="original curve", marker='x')
+plt.scatter(x=[c[0] for c in bezier_points], y=[c[1] for c in bezier_points], c="blue", label="bezier curve", s=0.2)
+plt.scatter(x=[c[0] for c in curve.control_points], y=[c[1] for c in curve.control_points], c="green", label="bezier control points", s=10)
+plt.text(s=f"degree = {degree}", x=0, y=100, c="red")
 plt.legend()
 ```
 ![im2](docs/im2.png)
