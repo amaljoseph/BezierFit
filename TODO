@@ -1,0 +1,34 @@
+## CURRENT
+2. Derivative Calculation: Allow for evaluating the first and second derivatives of the curve, which is useful for things like velocity, acceleration, and curve analysis.
+3. Curve Normal: You could add a function to calculate the unit normal vector at a given point on the curve.
+4. Tangents 
+
+
+## COMPLETED
+1. Point Calculation: Add a function to evaluate the Bezier curve at a given parameter value - calculate the position on the curve.
+
+
+
+## FUTURE
+
+4. Curve Subdivision:
+De Casteljau's Algorithm: Implement this algorithm for dividing a curve into two smaller Bezier curves. This is commonly used for curve refinement and rendering.
+    * how to represent the curve - as a collection of curves or as seperate curves.
+
+5. Curve interpolation: You can support interpolation between points based on a set of control points. This could be useful in graphics or path generation where you need the curve to pass through certain points.
+6. Curve Approximation: Allow the fitting of Bezier curves to approximate existing points in a set, similar to how you are using Least Squares fitting, but with other techniques like Ramer-Douglas-Peucker.
+
+
+7. Curvature Calculation: Calculate the curvature of the Bezier curve at a point, which could be useful for applications like road design or animation.
+8. Arc Length: Compute the arc length of the curve, either analytically (if possible) or via numerical integration.
+8.1. Midpoint of the curve by arc length.
+
+9. Affine Transformations: Implement functions for applying transformations to the Bezier curve, such as translation, rotation, and scaling, by manipulating the control points.
+10. Non-affine Transformations: You could explore more advanced transformations like shear or projective transformations.
+
+11. Simplify Bezier curves: Reduce the number of control points in a curve while maintaining the curve's shape within a specified error tolerance (simplification).
+
+12. Curve Fitting with Different Methods:
+Spline Fitting: You could expand on your least squares fitting method by implementing spline-based approaches (like B-Splines or NURBS), which could offer greater flexibility in curve fitting.
+
+13. Intersection point between two curves.
